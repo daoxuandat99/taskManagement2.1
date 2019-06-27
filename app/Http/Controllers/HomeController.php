@@ -33,4 +33,17 @@ class HomeController extends Controller
     {
         return view('delete', compact('id'));
     }
+
+    public function update(Request $request, $id)
+    {
+        $name = $request->name;
+        $phone = $request->phone;
+        $email = $request->email;
+        return view('update', compact('id', 'name', 'phone', 'email'));
+    }
+
+    public function edit($id)
+    {
+        return view('edit', compact('id'));
+    }
 }

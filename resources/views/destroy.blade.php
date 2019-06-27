@@ -19,28 +19,20 @@
 <h1>Danh sách khách hàng</h1>
 <table border="10">
     <thead>
-    <a href="{{route('create')}}" class="btn btn-primary">Thêm</a>
     <tr>
         <th>STT</th>
         <th>Họ và tên</th>
         <th>Số điện thoại</th>
         <th>Email</th>
-        <th>Thao tác</th>
     </tr>
     </thead>
     <tbody>
-    @for($i = 1; $i < 5;$i++)
-        <tr>
-            <td>{{$i}}</td>
-            <td>Nguyễn Văn A</td>
-            <td>01234567890</td>
-            <td>email.test@mail.com</td>
-            <td>
-                <a href="{{route('show', ['id' => $i])}}">Xem</a> | <a href="{{route('edit', ['id' => $i])}}">Sửa</a> | <a
-                        href="{{route('destroy',$i)}}">Xóa</a>
-            </td>
-        </tr>
-    @endfor
+    <tr>
+        <td>{{$id}}}</td>
+        <td>Nguyễn Văn A</td>
+        <td>01234567890</td>
+        <td>email.test@mail.com</td>
+    </tr>
     </tbody>
 </table>
 </body>
